@@ -5,9 +5,11 @@ const gallery = document.querySelector(".gallery");
 const images = galleryItems
   .map((image) => {
     return `
-    <a class="gallery__item" href="${image.original}">
-      <img class="gallery__image" src="${image.preview}" alt="${image.description}" />
-    </a>
+    <li>
+      <a class="gallery__item" href="${image.original}">
+        <img class="gallery__image" src="${image.preview}" alt="${image.description}" />
+      </a>
+    </li>
 `;
   })
   .join("");
